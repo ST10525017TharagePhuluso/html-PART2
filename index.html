@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
@@ -24,9 +24,9 @@
 <section class="hero"><div class="wrap"><h1>Handcrafted cakes and fresh bread</h1><p>Baked every morning in Ferndale, Randburg, from family recipes.</p><a class="btn" href="#menu">Browse the menu</a></div></section>
 <section id="menu"><div class="wrap"><h2>Our menu</h2>
 <div class="layout"><div>
-<div class="tools"><label class="sr" for="search" hidden>Search products</label><input id="search" type="search" placeholder="Search cakes and breads" maxlength="60">
-<label for="category" hidden>Category</label><select id="category"><option value="all">All products</option><option value="cakes">Cakes</option><option value="breads">Breads</option></select>
-<label for="sort" hidden>Sort</label><select id="sort"><option value="name">Name A-Z</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<div class="tools"><label class="sr" for="search">Search products</label><input id="search" type="search" placeholder="Search cakes and breads" maxlength="60">
+<label class="sr" for="category">Category</label><select id="category"><option value="all">All products</option><option value="cakes">Cakes</option><option value="breads">Breads</option></select>
+<label class="sr" for="sort">Sort</label><select id="sort"><option value="name">Name A-Z</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
 <div id="productGrid" class="grid" aria-live="polite"></div></div>
 <aside class="cart" id="order" aria-label="Your order"><h2>Your order</h2><ul id="cartItems"></ul><p class="row"><strong>Total</strong><strong id="cartTotal">R0.00</strong></p><a class="btn" href="enquiry.html">Enquire about this order</a></aside></div></div></section>
 <section><div class="wrap"><h2>From our ovens</h2><div id="gallery" class="gallery"></div></div></section>
