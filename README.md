@@ -2,7 +2,7 @@
 
 A responsive website for a family bakery in Ferndale, Randburg, Johannesburg. Visitors can browse cakes and breads, build an order summary, send a product enquiry with an instant price and availability response, and contact the bakery.
 
-- **Live site:** https://ST10525017TharagePhuluso.github.io/burkleigh-house-bakery/
+- **Live site:** https://calm-sawine-f3c741.netlify.app
 - **Repository:** https://github.com/ST10525017TharagePhuluso/burkleigh-house-bakery
 - **Student number:** ST10525017
 
