@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+<title>Enquire About Cakes and Bread | Burkleigh House Bakery Randburg</title>
+<meta name="description" content="Ask about a cake or bread order at Burkleigh House Bakery in Ferndale, Randburg. Get an instant price and availability estimate.">
+<meta name="keywords" content="bakery enquiry Randburg, order custom cake Johannesburg, sourdough price, bakery quote Ferndale">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/burkleigh-house-bakery/enquiry.html">
+</head>
+<body data-page="enquiry">
+
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Burkleigh House Bakery</a>
+<nav aria-label="Main"><a href="index.html#menu">Menu</a><a href="index.html#order" aria-current="page">Order Cart</a><a href="contact.html">Contact Us</a></nav></div></header>
+<main id="main"><section><div class="wrap narrow"><h1>Product enquiry</h1><p>Choose what you would like and when. We reply with the price and whether we can bake it in time.</p>
+<form id="enquiryForm" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+<div class="f"><label for="ename">Full name</label><input id="ename" name="name" data-rule="name" required autocomplete="name" maxlength="60"><p class="err" role="alert"></p></div>
+<div class="f"><label for="eemail">Email</label><input id="eemail" name="email" type="email" data-rule="email" required autocomplete="email"><p class="err" role="alert"></p></div>
+<div class="f"><label for="ephone">Phone</label><input id="ephone" name="phone" type="tel" data-rule="phone" required autocomplete="tel" placeholder="082 123 4567"><p class="err" role="alert"></p></div>
+<div class="f"><label for="product">Product</label><select id="product" name="product" required><option value="">Choose a product</option></select><p class="err" role="alert"></p></div>
+<div class="f"><label for="qty">Quantity (1-20)</label><input id="qty" name="quantity" type="number" min="1" max="20" value="1" required><p class="err" role="alert"></p></div>
+<div class="f"><label for="date">Collection or delivery date</label><input id="date" name="date" type="date" required><p class="err" role="alert"></p></div>
+<div class="f"><label for="method">Collection or delivery</label><select id="method" name="method"><option value="collection">Collect in store (free)</option><option value="delivery">Delivery (R60)</option></select></div>
+<button class="btn" type="submit">Get price and availability</button></form>
+<div id="result" class="result" role="status" hidden style="display:none"></div></div></section></main>
+<footer><p><strong>Burkleigh House Bakery</strong> | Ferndale, Randburg, Johannesburg<br>Mon-Sat 08:00-17:00 | Sun closed<br><a href="index.html">Shop</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a></p><p>&copy; 2026 Burkleigh House Bakery</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script></body></html>

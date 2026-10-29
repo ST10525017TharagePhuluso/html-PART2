@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<title>Contact Burkleigh House Bakery | Ferndale, Randburg</title>
+<meta name="description" content="Send a message to Burkleigh House Bakery or find us in Ferndale, Randburg. Open Monday to Saturday, 08:00 to 17:00.">
+<meta name="keywords" content="contact bakery Randburg, Ferndale bakery address, bakery opening hours, cake orders Johannesburg">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/burkleigh-house-bakery/contact.html">
+</head>
+<body data-page="contact">
+
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Burkleigh House Bakery</a>
+<nav aria-label="Main"><a href="index.html#menu">Menu</a><a href="index.html#order">Order Cart</a><a href="contact.html" aria-current="page">Contact Us</a></nav></div></header>
+<main id="main"><section><div class="wrap"><h1>Contact us</h1><div class="layout"><div>
+<form id="contactForm" novalidate>
+<div class="f"><label for="cname">Full name</label><input id="cname" data-rule="name" required autocomplete="name" maxlength="60"><p class="err" role="alert"></p></div>
+<div class="f"><label for="cemail">Email</label><input id="cemail" type="email" data-rule="email" required autocomplete="email"><p class="err" role="alert"></p></div>
+<div class="f"><label for="cphone">Phone</label><input id="cphone" type="tel" data-rule="phone" required autocomplete="tel" placeholder="082 123 4567"><p class="err" role="alert"></p></div>
+<div class="f"><label for="ctype">Type of message</label><select id="ctype" required><option value="">Choose a type</option><option>General question</option><option>Custom cake request</option><option>Feedback</option><option>Complaint</option></select><p class="err" role="alert"></p></div>
+<div class="f"><label for="message">Message</label><textarea id="message" rows="5" data-rule="message" maxlength="1000" required></textarea><p class="err" role="alert"></p><small id="count">0 / 1000</small></div>
+<input type="hidden" id="recipient" value="orders@YOUR-DOMAIN.co.za">
+<button class="btn" type="submit">Prepare email</button></form>
+<div id="mailBox" class="result" style="display:none"><h2>Your email is ready</h2><pre id="mailPreview" style="white-space:pre-wrap"></pre><a id="sendMail" class="btn" href="#">Send email</a></div></div>
+<div><h2>Find us</h2><div id="map" role="region" aria-label="Map showing Burkleigh House Bakery in Ferndale, Randburg"></div><p>Ferndale, Randburg, Johannesburg<br>Mon-Sat 08:00-17:00</p></div></div></div></section></main>
+<footer><p><strong>Burkleigh House Bakery</strong> | Ferndale, Randburg, Johannesburg<br>Mon-Sat 08:00-17:00 | Sun closed<br><a href="index.html">Shop</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a></p><p>&copy; 2026 Burkleigh House Bakery</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script><script src="js/script.js"></script></body></html>
