@@ -1,264 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burkleigh House Bakery | Fresh Baked Goods & Custom Orders</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+<title>Fresh Cakes and Bread in Ferndale, Randburg | Burkleigh House Bakery</title>
+<meta name="description" content="Handcrafted cakes and fresh sourdough, baguettes and loaves baked daily in Ferndale, Randburg. Browse the menu and order online.">
+<meta name="keywords" content="bakery Randburg, custom cakes Johannesburg, sourdough Ferndale, fresh bread">
+<link rel="canonical" href="https://ST10525017TharagePhuluso.github.io/burkleigh-house-bakery/">
+<meta property="og:title" content="Burkleigh House Bakery"><meta property="og:description" content="Fresh cakes and breads baked daily in Ferndale, Randburg."><meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Burkleigh House Bakery","address":{"@type":"PostalAddress","addressLocality":"Ferndale, Randburg","addressRegion":"Gauteng","addressCountry":"ZA"},"openingHours":"Mo-Sa 08:00-17:00"}</script>
 </head>
-<body background="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1920&q=80" bgcolor="#3D2314" text="#2C2523" link="#8C4227" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<body data-page="home">
 
-<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td valign="top">
-
-<!-- NAVIGATION -->
-<table width="100%" bgcolor="#FFFFFF" cellpadding="10" cellspacing="0" border="0">
-<tr>
-<td width="50%">
-<a href="#"><font face="Georgia, serif" size="5" color="#3D2314"><b>BURKLEIGH HOUSE BAKERY</b></font></a><br>
-<font face="Segoe UI, sans-serif" size="2" color="#8C4227">Sweet, Simple, Satisfying</font>
-</td>
-<td width="50%" align="right">
-<font face="Segoe UI, sans-serif" size="3" color="#2C2523">
-<a href="#menu"><b>Menu</b></a> &nbsp;&nbsp;
-<a href="#order"><b>Order Cart</b></a> &nbsp;&nbsp;
-<a href="#contact"><b>Contact Us</b></a>
-</font>
-</td>
-</tr>
-</table>
-
-<!-- HERO SECTION -->
-<table width="100%" cellpadding="60" cellspacing="0" border="0">
-<tr>
-<td align="center">
-<font face="Georgia, serif" size="7" color="#FFFFFF"><b>Handcrafted Cakes &amp; Fresh Breads</b></font><br><br>
-<font face="Segoe UI, sans-serif" size="4" color="#F4EBE1">Baked daily in Ferndale, Randburg using traditional family recipes.</font><br><br>
-<a href="#menu">
-<table cellpadding="12" cellspacing="0" border="0" bgcolor="#8C4227">
-<tr><td><font face="Segoe UI, sans-serif" size="3" color="#FFFFFF"><b>&nbsp;&nbsp;Browse Products &amp; Order&nbsp;&nbsp;</b></font></td></tr>
-</table>
-</a>
-</td>
-</tr>
-</table>
-
-<!-- MAIN SHOPPING CONTENT -->
-<table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#FDFBF7">
-<tr>
-<td width="65%" valign="top" id="menu">
-
-    <!-- FILTERS -->
-    <p>
-    <button class="filter-btn active" onclick="filterCategory('all')">All Products</button>
-    <button class="filter-btn" onclick="filterCategory('cakes')">Cakes</button>
-    <button class="filter-btn" onclick="filterCategory('breads')">Breads</button>
-    </p>
-
-    <table width="100%" cellpadding="8" cellspacing="0" border="0" id="productsGrid">
-        <!-- Products loaded dynamically via JS -->
-    </table>
-
-</td>
-
-<td width="35%" valign="top" id="order">
-<table width="100%" bgcolor="#FFFFFF" cellpadding="20" cellspacing="0" border="1" bordercolor="#E8DFD8">
-<tr><td>
-
-<font face="Georgia, serif" size="5" color="#3D2314"><b>Your Order</b></font><hr>
-
-<div id="cartItems">
-<font face="Segoe UI, sans-serif" size="2" color="#665A55">Your cart is empty. Select products to add them to your order.</font>
-</div>
-
-<hr>
-<table width="100%"><tr>
-<td><font size="4" color="#3D2314"><b>Total:</b></font></td>
-<td align="right"><font size="4" color="#3D2314"><b id="cartTotal">R0.00</b></font></td>
-</tr></table>
-<hr>
-
-<form onsubmit="handleCheckout(event)">
-<input type="text" placeholder="Full Name" required size="30"><br><br>
-<input type="tel" placeholder="Phone Number" required size="30"><br><br>
-<input type="email" placeholder="Email Address" required size="30"><br><br>
-<textarea rows="2" cols="28" placeholder="Delivery Address or Pickup Time Notes"></textarea><br><br>
-<input type="submit" value="Place Bakery Order">
-</form>
-
-</td></tr>
-</table>
-</td>
-</tr>
-</table>
-
-<!-- FOOTER -->
-<table width="100%" bgcolor="#3D2314" cellpadding="20" cellspacing="0" border="0" id="contact">
-<tr>
-<td align="center">
-<font face="Segoe UI, sans-serif" size="3" color="#F4EBE1"><b>Burkleigh House Bakery</b> | Ferndale, Randburg, Johannesburg</font><br>
-<font face="Segoe UI, sans-serif" size="2" color="#F4EBE1">Operating Hours: Mon - Sat: 08:00 - 17:00 | Sun: Closed</font><br>
-<font face="Segoe UI, sans-serif" size="1" color="#bda395">&copy; 2026 Burkleigh House Bakery. All rights reserved.</font>
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-<!-- JAVASCRIPT LOGIC -->
-<script>
-    // REAL BAKERY PRODUCTS DATA (Cakes & Breads with real imagery)
-    const products = [
-        {
-            id: 1,
-            name: "Classic Chocolate Fudge Cake",
-            category: "cakes",
-            price: 380.00,
-            desc: "Rich, multi-layered dark chocolate sponge with decadent ganache frosting.",
-            img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            id: 2,
-            name: "Fresh Strawberry Cream Cake",
-            category: "cakes",
-            price: 350.00,
-            desc: "Light vanilla sponge layered with whipped cream and local fresh strawberries.",
-            img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            id: 3,
-            name: "Velvety Red Velvet Cake",
-            category: "cakes",
-            price: 420.00,
-            desc: "Traditional red velvet layers with sweet vanilla cream cheese icing.",
-            img: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            id: 4,
-            name: "Artisan Sourdough Loaf",
-            category: "breads",
-            price: 65.00,
-            desc: "Slow-fermented crusty sourdough bread with a soft, airy interior.",
-            img: "https://images.unsplash.com/photo-1585478259715-876acc5be8eb?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            id: 5,
-            name: "Classic French Baguette",
-            category: "breads",
-            price: 35.00,
-            desc: "Crispy crust and light texture, baked fresh every morning.",
-            img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            id: 6,
-            name: "Multigrain Seeded Loaf",
-            category: "breads",
-            price: 55.00,
-            desc: "Hearty loaf packed with pumpkin, sunflower, and flax seeds.",
-            img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
-        }
-    ];
-
-    let cart = [];
-
-    // RENDER PRODUCTS GRID (built with table rows/cells, no CSS)
-    function renderProducts(items) {
-        const grid = document.getElementById('productsGrid');
-        let rows = '';
-        for (let i = 0; i < items.length; i += 2) {
-            rows += '<tr>';
-            for (let j = i; j < i + 2 && j < items.length; j++) {
-                const p = items[j];
-                rows += `
-                    <td width="50%" valign="top">
-                    <table width="100%" bgcolor="#FFFFFF" border="1" bordercolor="#E8DFD8" cellpadding="10" cellspacing="0">
-                        <tr><td align="center"><img src="${p.img}" alt="${p.name}" width="220" height="140"></td></tr>
-                        <tr><td>
-                            <font face="Segoe UI, sans-serif" size="3" color="#3D2314"><b>${p.name}</b></font><br>
-                            <font face="Segoe UI, sans-serif" size="2" color="#665A55">${p.desc}</font><br><br>
-                            <table width="100%"><tr>
-                                <td><font size="3" color="#8C4227"><b>R${p.price.toFixed(2)}</b></font></td>
-                                <td align="right"><button class="add-btn" onclick="addToCart(${p.id})">+ Add</button></td>
-                            </tr></table>
-                        </td></tr>
-                    </table>
-                    </td>
-                `;
-            }
-            rows += '</tr>';
-        }
-        grid.innerHTML = rows;
-    }
-
-    // FILTER CATEGORIES
-    function filterCategory(category) {
-        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
-
-        if (category === 'all') {
-            renderProducts(products);
-        } else {
-            renderProducts(products.filter(p => p.category === category));
-        }
-    }
-
-    // ADD TO CART
-    function addToCart(productId) {
-        const product = products.find(p => p.id === productId);
-        cart.push(product);
-        updateCartUI();
-    }
-
-    // REMOVE FROM CART
-    function removeFromCart(index) {
-        cart.splice(index, 1);
-        updateCartUI();
-    }
-
-    // UPDATE CART UI
-    function updateCartUI() {
-        const cartItemsContainer = document.getElementById('cartItems');
-        const cartTotalContainer = document.getElementById('cartTotal');
-
-        if (cart.length === 0) {
-            cartItemsContainer.innerHTML = `<font face="Segoe UI, sans-serif" size="2" color="#665A55">Your cart is empty. Select products to add them to your order.</font>`;
-            cartTotalContainer.innerText = 'R0.00';
-            return;
-        }
-
-        let rows = '<table width="100%">';
-        cart.forEach((item, index) => {
-            rows += `
-                <tr>
-                <td><font size="2" color="#2C2523"><b>${item.name}</b></font><br><font size="1" color="#665A55">R${item.price.toFixed(2)}</font></td>
-                <td align="right"><button class="remove-btn" onclick="removeFromCart(${index})">&times;</button></td>
-                </tr>
-            `;
-        });
-        rows += '</table>';
-        cartItemsContainer.innerHTML = rows;
-
-        const total = cart.reduce((sum, item) => sum + item.price, 0);
-        cartTotalContainer.innerText = `R${total.toFixed(2)}`;
-    }
-
-    // HANDLE CHECKOUT SUBMISSION
-    function handleCheckout(e) {
-        e.preventDefault();
-        if (cart.length === 0) {
-            alert('Please add at least one bakery product to your cart before ordering!');
-            return;
-        }
-        alert('Thank you for your order! Burkleigh House Bakery has received your order request and will contact you shortly to confirm payment & delivery details.');
-        cart = [];
-        updateCartUI();
-        e.target.reset();
-    }
-
-    // INITIAL LOAD
-    renderProducts(products);
-</script>
-</body>
-</html>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Burkleigh House Bakery</a>
+<nav aria-label="Main"><a href="index.html#menu" aria-current="page">Menu</a><a href="index.html#order">Order Cart</a><a href="contact.html">Contact Us</a></nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap"><h1>Handcrafted cakes and fresh bread</h1><p>Baked every morning in Ferndale, Randburg, from family recipes.</p><a class="btn" href="#menu">Browse the menu</a></div></section>
+<section id="menu"><div class="wrap"><h2>Our menu</h2>
+<div class="layout"><div>
+<div class="tools"><label class="sr" for="search" hidden>Search products</label><input id="search" type="search" placeholder="Search cakes and breads" maxlength="60">
+<label for="category" hidden>Category</label><select id="category"><option value="all">All products</option><option value="cakes">Cakes</option><option value="breads">Breads</option></select>
+<label for="sort" hidden>Sort</label><select id="sort"><option value="name">Name A-Z</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<div id="productGrid" class="grid" aria-live="polite"></div></div>
+<aside class="cart" id="order" aria-label="Your order"><h2>Your order</h2><ul id="cartItems"></ul><p class="row"><strong>Total</strong><strong id="cartTotal">R0.00</strong></p><a class="btn" href="enquiry.html">Enquire about this order</a></aside></div></div></section>
+<section><div class="wrap"><h2>From our ovens</h2><div id="gallery" class="gallery"></div></div></section>
+<section><div class="wrap narrow"><h2>Common questions</h2>
+<button class="acc-q" aria-expanded="false">How far ahead should I order a cake?</button><div class="acc-a">Order cakes at least 2 days ahead. Breads need 1 day.</div>
+<button class="acc-q" aria-expanded="false">Do you deliver?</button><div class="acc-a">Yes, around Randburg and Ferndale for a R60 delivery fee. You can also collect in store.</div>
+<button class="acc-q" aria-expanded="false">When are you open?</button><div class="acc-a">Monday to Saturday, 08:00 to 17:00. We are closed on Sundays.</div></div></section>
+</main>
+<dialog id="productModal" aria-label="Product details"><img id="mImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBTAA7" alt=""><div class="in"><h2 id="mName"></h2><p id="mDesc"></p><p id="mInfo" class="price"></p><a id="mEnq" class="btn" href="enquiry.html">Enquire about this</a> <button class="btn alt close-dlg" type="button">Close</button></div></dialog>
+<dialog id="lightbox" class="light" aria-label="Photo viewer"><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBTAA7" alt=""><div class="in"><p id="lbCap" aria-live="polite"></p><button class="btn alt" id="lbPrev" type="button">Previous</button> <button class="btn alt" id="lbNext" type="button">Next</button> <button class="btn close-dlg" type="button">Close</button></div></dialog>
+<footer><p><strong>Burkleigh House Bakery</strong> | Ferndale, Randburg, Johannesburg<br>Mon-Sat 08:00-17:00 | Sun closed<br><a href="index.html">Shop</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a></p><p>&copy; 2026 Burkleigh House Bakery</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script></body></html>

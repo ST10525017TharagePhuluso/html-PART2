@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ST10525017TharagePhuluso.github.io/burkleigh-house-bakery/sitemap.xml
